@@ -1,0 +1,146 @@
+:root {
+    --orange: orange;
+    --salmon: rgb(255, 0, 157);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+#heading {
+   padding: 15px;
+   padding-left: 50px;
+}
+
+#logo {
+    height: 16px;
+    width: 80px;
+}
+
+#slogan {
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+#stylish {
+    color: rgb(255, 113, 61);
+}
+
+#playstore {
+    height: 15px;
+    padding-left: 5px;
+    margin-top: 2px;
+    background-color: transparent;
+}
+
+.download_now_btn {
+    margin-top: 10px;
+    width: 110px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(90deg, var(--salmon), var(--orange));
+    padding: 7px;
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+#btn {
+    background-color: transparent;
+    border: none;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.download_now_btn:hover {
+    transform: scale(0.95);
+    background-image: linear-gradient(90deg, var(--orange), var(--salmon));
+}
+
+#girl {
+    width: 300px;
+    background-color: transparent;
+    margin-top: -16px;
+}
+
+.hero {
+    background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 1), rgba(26, 26, 26, 0.8)), 
+    url('./images/hero2_bg_images.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+   
+}
+
+#hero2 {
+    display: flex;
+    padding-left: 50px;
+   
+}
+#hero2_div1 {
+    width: 45%;
+}
+
+/* Container_1 */
+#container_1 {
+    background-image: 
+    linear-gradient(to right, rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.9)), 
+    url('./images/cont_1_bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#container_1_head_1 {
+    font-size: 24px;
+    margin-top: 35px;
+}
+#container_1_head_2 {
+    font-size: 24px;
+    margin-top: -70px;
+}
+#in_container_1 {
+    position: relative;
+    width: 300px; 
+    height: 200px;
+    margin: 50px auto;
+    padding-left: 150px;
+  }
+  
+  .post {
+    position: absolute;
+    height: 150px;
+    width: 100px;
+    top: 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  }
+  .post:nth-child(1) {
+    transform: rotateZ(-2deg) translateX(210px) translateY(0px);
+  }
+  .post:nth-child(2) {
+    transform: rotateZ(-2deg) translateX(120px) translateY(0px);
+  }
+  .post:nth-child(3) {
+    transform: rotateZ(0deg) translateX(20px) translateY(-10px);
+    z-index: 2;
+    height: 170px;
+    width: 110px;
+  }
+  .post:nth-child(4) {
+    transform: rotateZ(1deg) translateX(-80px) translateY(0px);
+  }
+  .post:nth-child(5) {
+    transform: rotateZ(1deg) translateX(-180px) translateY(0px);
+  }
+  
+  
