@@ -182,7 +182,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
     opacity: 0.9;
-    margin: 0px 10px 10px 10px;
+    margin: 0px 50px 10px 50px;
 }
 .cont_2_inner_container {
     display: flex;
@@ -207,7 +207,8 @@ body {
 } 
 .cont_2_inner_container > p {
     /* max-width: 100px; */
-    font-size: 8px;
+    font-size: 7px;
+    line-height: 12px;
 }
 .cont_2_in_level_1 > div > p:nth-child(1) {
     font-size: 7px;
