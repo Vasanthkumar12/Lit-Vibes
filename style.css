@@ -144,3 +144,108 @@ body {
   }
   
   
+#in_container_2 {
+    display: flex;
+}
+.in_container_level1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    background-color: rgb(43, 42, 42);
+    padding: 3px 15px;
+    border-radius: 50px;
+    opacity: 0.8;
+}
+.in_container_level1 > img {
+    height: 20px;
+    width: 20px;
+}
+.in_container_level1 > h2 {
+    font-size: 12px;
+    margin-left: 10px;
+}
+#in_container_2 + div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* User Love */
+#user_love {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+#container_2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    opacity: 0.9;
+    margin: 0px 10px 10px 10px;
+}
+.cont_2_inner_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: linear-gradient(to bottom, #333333, #000000);
+    padding: 3px 15px;
+    opacity: 0.8;
+}
+.cont_2_inner_container > img {
+    height: 20px;
+    width: 20px;
+}
+.cont_2_inner_container > div > img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+} 
+.cont_2_inner_container > p {
+    /* max-width: 100px; */
+    font-size: 8px;
+}
+.cont_2_in_level_1 > div > p:nth-child(1) {
+    font-size: 7px;
+    
+}
+.cont_2_in_level_1 > div > p:nth-child(2) {
+    font-size: 5px;
+}
+
+/* Container 3 */
+#container_3 {
+    background-image: linear-gradient(50deg, var(--orange), var(--salmon));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#container_3 > h1 {
+    font-size: 24px;
+}
+#container_3 > #download_btn:hover {
+    color: white;
+    transform: scale(0.95);
+    background-color: rgb(0, 0, 0);
+    
+}
+#download_btn {
+    border: none;
+    background-color: white; 
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 110px;
+    padding: 4px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hover_img {
+    height: 15px;
+    width: 15px;
+    padding-left: 5px;
+}

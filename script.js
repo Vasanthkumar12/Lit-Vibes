@@ -43,3 +43,13 @@ function typeWord(word, onComplete) {
   }
 
   loopTyping()
+
+  const img = document.getElementById("hover_img");
+
+  img.addEventListener("mouseover", () => {
+    img.src = "./images/playstore2.png"
+  });
+  
+  img.addEventListener("mouseout", () => {
+    img.src = "./images/black_playstore_icon.png"
+  });
