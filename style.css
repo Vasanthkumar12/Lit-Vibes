@@ -540,13 +540,13 @@ body {
      #hero2 {
         padding-left: 50px;
         display: grid;
-        grid-template-columns: 2, 1fr;   
+        grid-template-columns: repeat(2, 1fr);  
     }
      #girl {
          width: 45%;
          background-color: transparent;
          margin-top: -16px;
-         height: 90%;
+         height: 70%;
      }
      
      .hero {
