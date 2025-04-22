@@ -540,13 +540,12 @@ body {
      #hero2 {
         padding-left: 50px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);  
+        grid-template-columns: 2fr 1fr;  
     }
      #girl {
-         width: 45%;
+         width: 500px;
          background-color: transparent;
-         margin-top: -16px;
-         height: 70%;
+         height: 90vh;
      }
      
      .hero {
@@ -565,7 +564,8 @@ body {
      
     
      #hero2_div1 {
-         width: 45%;
+         width: 400px;
+         margin-top: 150px;
      }
      
      /* Container_1 */
