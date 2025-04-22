@@ -491,6 +491,332 @@ body {
     }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1025px) {
+     #logo {
+         height: 34px;
+         width: 150px;
+     }
+     
+     #slogan {
+         font-size: 32px;
+         margin-top: 50px;
+     }
+     
+     #stylish {
+         color: rgb(255, 113, 61);
+     }
+     
+     #playstore {
+         height: 25px;
+         padding-left: 5px;
+         margin-top: 2px;
+         background-color: transparent;
+     }
+     
+     .download_now_btn {
+         margin-top: 10px;
+         width: 170px;
+         border: none;
+         border-radius: 5px;
+         background-image: linear-gradient(90deg, var(--salmon), var(--orange));
+         padding: 7px;
+         transition: transform 0.2s ease;
+         display: flex;
+         align-items: center;
+     }
+     
+     #btn {
+         background-color: transparent;
+         border: none;
+         font-size: 16px;
+         font-weight: bold;
+         color: white;
+     }
+     
+     .download_now_btn:hover {
+         transform: scale(0.95);
+         background-image: linear-gradient(90deg, var(--orange), var(--salmon));
+     }
+     #hero2 {
+        padding-left: 50px;
+        display: grid;
+        grid-template-columns: 2, 1fr;   
+    }
+     #girl {
+         width: 45%;
+         background-color: transparent;
+         margin-top: -16px;
+         height: 90%;
+     }
+     
+     .hero {
+         background-image: 
+         linear-gradient(to right, rgba(0, 0, 0, 1), rgba(26, 26, 26, 0.8)), 
+         url('./images/hero2_bg_images.jpeg');
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         height: 100vh;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+        
+     }
+     
     
+     #hero2_div1 {
+         width: 45%;
+     }
+     
+     /* Container_1 */
+     #container_1 {
+         background-image: 
+         linear-gradient(to right, rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.9)), 
+         url('./images/cont_1_bg.jpeg');
+         background-position: center;
+         background-size: cover;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: flex-start;
+         height: 70%;
+     }
+     #container_1_head_1 {
+         font-size: 32px;
+         margin-top: 35px;
+     }
+     #container_1_head_2 {
+         font-size: 32px;
+         margin-top: 70px;
+     }
+     #in_container_1 {
+         position: relative;
+         width: 300px; 
+         height: 200px;
+         margin: 50px auto;
+         padding-left: 150px;
+       }
+       
+       .post {
+         position: absolute;
+         height: 270px;
+         width: 220px;
+         top: 0;
+         border-radius: 10px;
+         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+       }
+       .post:nth-child(1) {
+         transform: rotateZ(-2deg) translateX(330px) translateY(0px);
+       }
+       .post:nth-child(2) {
+         transform: rotateZ(-2deg) translateX(180px) translateY(0px);
+       }
+       .post:nth-child(3) {
+         transform: rotateZ(0deg) translateX(-10px) translateY(-30px);
+         z-index: 2;
+         height: 300px;
+         width: 250px;
+       }
+       .post:nth-child(4) {
+         transform: rotateZ(1deg) translateX(-220px) translateY(0px);
+       }
+       .post:nth-child(5) {
+         transform: rotateZ(1deg) translateX(-400px) translateY(0px);
+       }
+       
+       
+     #in_container_2 {
+         display: flex;
+     }
+     .in_container_level1 {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-right: 50px;
+         background-color: rgb(43, 42, 42);
+         padding: 3px 15px;
+         border-radius: 50px;
+         opacity: 0.8;
+     }
+     .in_container_level1 > img {
+         height: 24px;
+         width: 24px;
+     }
+     .in_container_level1 > h2 {
+         font-size: 16px;
+         margin-left: 10px;
+     }
+     #in_container_2 + div {
+         margin-top: 20px;
+         margin-bottom: 20px;
+     }
+     
+     /* User Love */
+     #user_love {
+         margin-top: 40px;
+         margin-bottom: 20px;
+         text-align: center;
+         font-size: 32px;
+     }
+     #container_2 {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         column-gap: 10px;
+         opacity: 0.9;
+         margin: 0px 50px 10px 50px;
+     }
+     .cont_2_inner_container {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: flex-start;
+         background-image: linear-gradient(to bottom, #575555, #181717);
+         padding: 3px 15px;
+         /* opacity: 0.9; */
+         border-radius: 5px;
+         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+         margin-bottom: 15px;
+     }
+     .cont_2_inner_container {
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 350px;
+     }
+     .cont_2_inner_container > img {
+         height: 30px;
+         width: 30px;
+     }
+     .cont_2_inner_container > div > img {
+         height: 60px;
+         width: 60px;
+         border-radius: 50%;
+     } 
+     .cont_2_inner_container > p {
+         /* min-height: 100px; */
+         font-size: 12px;
+         line-height: 12px;
+     }
+     .cont_2_in_level_1 > div > p:nth-child(1) {
+        font-size: 16px;
+     }
+     .cont_2_in_level_1 > div > p:nth-child(2) {
+        font-size: 12px;
+     }
+     
+     /* Container 3 */
+     #container_3 {
+         background-image: linear-gradient(50deg, var(--orange), var(--salmon));
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding-top: 20px;
+         padding-bottom: 20px;
+     }
+     #container_3 > h1 {
+         font-size: 32px;
+     }
+     #container_3 > #download_btn:hover {
+         color: white;
+         transform: scale(0.95);
+         background-color: rgb(0, 0, 0);
+         
+     }
+     #download_btn {
+         border: none;
+         background-color: white; 
+         font-size: 12px;
+         border: none;
+         border-radius: 5px;
+         width: 110px;
+         padding: 4px 0px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     #hover_img {
+         height: 15px;
+         width: 15px;
+         padding-left: 5px;
+     }
+     
+     #container_4 {
+         display: grid;
+         grid-template-columns: 3fr 1fr;
+     }
+     #container_4 > div {
+         display: flex;
+         flex-direction: column;
+         background-color: white;
+         color: #000000;
+         padding: 30px 50px 20px;
+     }
+     #container_4 > div > img {
+         height: 30px;
+         width: 120px;
+     }
+     #container_4 > div > p, #container_4 > div > address {
+         font-size: 16px;
+     }
+     #container_4 > div:nth-child(2) > p {
+         font-weight: bold;
+     }
+     #container_4 > div:nth-child(2) {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     #container_4 > div:nth-child(2) > button {
+         background-color: #ffffff;
+         border: 1px solid black;
+         font-size: 16px;
+         width: 120px;
+     }
+     #container_4 > div:nth-child(2) > button:hover {
+         background-color: rgb(0, 0, 0);
+         color: #ffffff;
+     }
+     
+     .white {
+         border: 0.5px solid rgb(255, 255, 255);
+     }
+     #black {
+         border: 0.5px solid rgb(0, 0, 0);
+     }
+     #underline {
+         display: grid;
+         grid-template-columns: 0.5fr 15fr 0.5fr;
+         height: 0px;
+         margin: 0px 20px; 
+     }
+     #container_5 {
+         background-color: white;
+     }
+     #container_5 {
+         display: flex;
+         flex-direction: row;
+         color: #000000;
+         justify-content: space-around;
+         align-items: center;
+         padding-top: 20px;
+         padding: 10px 40px 10px 35px;
+     }
+     #footer_links {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         width: 40%;
+     }
+     #footer_links > a {
+         text-decoration: none;
+         color: rgb(155, 153, 153);
+         font-size: 16px;   
+     }
+     #footer_links > a:hover {
+         cursor: pointer;
+         color: #000000;
+     }
+     #container_5 > div:nth-child(2) > p {
+         font-size: 16px;
+         color: rgb(153, 153, 153);
+     }
 }
