@@ -546,6 +546,7 @@ body {
          width: 500px;
          background-color: transparent;
          height: 90vh;
+         margin-right: 100px;
      }
      
      .hero {
@@ -566,6 +567,7 @@ body {
      #hero2_div1 {
          width: 400px;
          margin-top: 150px;
+         margin-left: 100px;
      }
      
      /* Container_1 */
