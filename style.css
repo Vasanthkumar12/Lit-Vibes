@@ -416,6 +416,9 @@ body {
         grid-template-columns: repeat(1, 1fr);
         column-gap: 10px;
     }
+    .cont_2_inner_container > p {
+        font-size: 10px;
+    }
     #container_4 {
         display: flex;
         flex-direction: column;
@@ -429,4 +432,65 @@ body {
     #container_5 > #footer_links {
         width: 80vw;
     }
+}
+
+@media (min-width: 768px) {
+    #girl {
+        height: 72%;
+        width: 40vw;
+        margin: auto;
+    }
+    #heading {
+        height: 30px;
+    }
+    #slogan {
+        font-size: 24px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .in_container_level1 > img {
+        height: 30px;
+        width: 30px;
+        padding-right: 10px;
+    }
+    .in_container_level1 > h2 {
+        font-size: 16px;
+        margin-left: 4px;
+    }
+    .download_now_btn {
+        margin: auto;
+        font-size: 24px;
+    }
+    #container_2 {
+        display: flex;
+    }
+    .cont_2_inner_container > p {
+        font-size: 10px;
+    }
+    #container_4 > div > p,  #container_4 > div > address {
+        font-size: 16px;
+    }
+    #container_5 > #footer_links > a {
+        font-size: 16px;
+    }
+    #container_5 > div:nth-child(2) > p {
+        font-size: 16px;
+    }
+    #container_4 > div:nth-child(2) > button {
+        font-size: 16px;
+        width: 120px;
+        padding: 4px;
+    }
+    #container_3 > button {
+        font-size: 16px;
+        width: 150px;
+        padding: 10px 4px;   
+    }
+    .download_now_btn {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1281px) {
+    
 }
