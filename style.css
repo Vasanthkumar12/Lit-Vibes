@@ -102,19 +102,21 @@ body {
     justify-content: center;
 }
 #container_1_head_1 {
-    font-size: 24px;
+    font-size: 32px;
     margin-top: 35px;
+    margin-bottom: 35px;
 }
 #container_1_head_2 {
-    font-size: 24px;
-    margin-top: -70px;
+    font-size: 32px;
+    margin-top: -30px;
+    margin-bottom: 35px;
 }
 #in_container_1 {
     position: relative;
     width: 300px; 
     height: 200px;
     margin: 50px auto;
-    padding-left: 150px;
+    padding-left: 60px;
   }
   
   .post {
@@ -147,6 +149,11 @@ body {
   
 #in_container_2 {
     display: flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#container_1 > div:last-child {
+    margin-bottom: 50px;
 }
 .in_container_level1 {
     display: flex;
@@ -176,12 +183,12 @@ body {
     margin-top: 40px;
     margin-bottom: 20px;
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
 }
 #container_2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px;
+    column-gap: 20px;
     opacity: 0.9;
     margin: 0px 50px 10px 50px;
 }
@@ -191,32 +198,32 @@ body {
     justify-content: center;
     align-items: flex-start;
     background-image: linear-gradient(to bottom, #575555, #181717);
-    padding: 3px 15px;
+    padding: 8px 15px;
     /* opacity: 0.9; */
     border-radius: 5px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     margin-bottom: 15px;
+    height: 300px;
 }
 .cont_2_inner_container > img {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 25px;
 }
 .cont_2_inner_container > div > img {
-    height: 40px;
-    width: 40px;
+    height: 80px;
+    width: 60px;
     border-radius: 50%;
 } 
 .cont_2_inner_container > p {
-    /* max-width: 100px; */
-    font-size: 7px;
+    font-size: 16px;
     line-height: 12px;
 }
 .cont_2_in_level_1 > div > p:nth-child(1) {
-    font-size: 7px;
+    font-size: 16px;
     
 }
 .cont_2_in_level_1 > div > p:nth-child(2) {
-    font-size: 5px;
+    font-size: 10px;
 }
 
 /* Container 3 */
@@ -335,7 +342,7 @@ body {
     color: rgb(153, 153, 153);
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
     body {
         width: 100%;
     }
@@ -343,30 +350,42 @@ body {
         font-size: 26px;
     }
     .hero {
-        height: 100vh;
+        height: 90vh;
     }
     #heading {
-        height: 5%;
-        font-size: 16px;
+        height: 1%;
+    }
+    #logo{
+        height: 35px;
+        width: 130px;
     }
     #hero2 {
         display: flex;
         flex-direction: column;
-        height: 95%;
+        height: 80vh;
     }
     #hero2_div1 {
         width: 100%;
     }
+    #slogan {
+        font-size: 32px;
+    }
     .download_now_btn {
         margin: auto;
-        font-size: 16px;
+        width: 200px;
+        height: 30px;
+    }
+    #btn {
+        font-size: 20px;
+        color: white;
     }
     #playstore {
-        height: 16px;
+        height: 24px;
     }
     #girl {
-        height: 90%;
-        width: 70vw;
+        height: 350px;
+        width: 350px;
+        margin: auto;
     }
     #container_1_head_1, #container_1_head_2  {
         text-align: center;
@@ -380,22 +399,7 @@ body {
         width: auto;
         border-radius: 10px;
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-      }
-      .post:nth-child(1) {
-        transform: none;
-      }
-      .post:nth-child(2) {
-        transform: none;
-      }
-      .post:nth-child(3) {
-        transform: none;
-      }
-      .post:nth-child(4) {
-        transform: none;
-      }
-      .post:nth-child(5) {
-        transform: none;
-      }
+    }
       #container_1_head_2  {
         margin-top: 0px;
       }
@@ -430,23 +434,55 @@ body {
         justify-content: center;
     }
     #container_5 > #footer_links {
-        width: 80vw;
+        flex: 1;
     }
+    .post:nth-child(1) {
+        transform: rotateY(10deg) scale(0.7) translateX(-10px) translateY(-106px);
+        z-index: 3;
+   }
+   .post:nth-child(2) {
+        transform: rotateY(24deg) skew(1deg, -2deg) scale(0.67) translateX(-225px) translateY(-106px);
+        z-index: 1;
+    
+   }
+   .post:nth-child(3) {
+        transform: rotateY(0deg) scale(1.1) translateX(164px) translateY(-16px) skew(-2deg, 1deg);
+        z-index: 2;
+   }
+   .post:nth-child(4) {
+     display: none;
+   }
+   .post:nth-child(5) {
+     display: none;
+   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     #girl {
-        height: 72%;
-        width: 40vw;
+        height: 400px;
+        width: 400px;
         margin: auto;
+        margin-top: -30px;
+    }
+    #logo {
+        height: 33px;
+        width: 150px;
     }
     #heading {
+        padding-top: 40px;
         height: 30px;
     }
+    .hero {
+        height: 70vh;
+    }
     #slogan {
-        font-size: 24px;
-        margin-top: 50px;
+        font-size: 35px;
+        margin-top: 100px;
         text-align: center;
+    }
+    #btn {
+        color: white;
+        font-size: 24px;
     }
     .in_container_level1 > img {
         height: 30px;
@@ -460,46 +496,110 @@ body {
     .download_now_btn {
         margin: auto;
         font-size: 24px;
+        width: 220px;
+        height: 40px;
+    }
+    #playstore {
+        height: 30px;
     }
     #container_2 {
         display: flex;
     }
+    .cont_2_inner_container {
+        height: 400px;
+    }
+    
     .cont_2_inner_container > p {
-        font-size: 10px;
+        font-size: 16px;
+        line-height: 22px;
     }
     #container_4 > div > p,  #container_4 > div > address {
         font-size: 16px;
     }
     #container_5 > #footer_links > a {
-        font-size: 16px;
+        font-size: 12px;
     }
     #container_5 > div:nth-child(2) > p {
-        font-size: 16px;
+        font-size: 12px;
     }
     #container_4 > div:nth-child(2) > button {
         font-size: 16px;
         width: 120px;
         padding: 4px;
     }
-    #container_3 > button {
+    #container_3 > #download_btn {
+        height: 36px;
+        width: 200px;
+        margin-bottom: 20px;
+       }
+       #download_btn > button {
         font-size: 16px;
-        width: 150px;
-        padding: 10px 4px;   
-    }
+        border: none;
+        background-color: transparent;
+        margin-right: 10px;
+       }
+       #download_btn > button:hover {
+        color: white;
+       }
+       #download_btn > img {
+        height: 24px;
+        width: 24px;
+       }
     .download_now_btn {
         font-size: 24px;
+    }
+    .post {
+        position: absolute;
+        height: 270px;
+        width: 220px;
+        top: 0;
+        border-radius: 10px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+      }
+      .post:nth-child(1) {
+           transform: rotateY(10deg) scale(0.7) translateX(-10px) translateY(-106px);
+           z-index: 3;
+      }
+      .post:nth-child(2) {
+           transform: rotateY(24deg) skew(1deg, -2deg) scale(0.67) translateX(-225px) translateY(-106px);
+           z-index: 1;
+       
+      }
+      .post:nth-child(3) {
+           transform: rotateY(0deg) scale(1.1) translateX(164px) translateY(-16px) skew(-2deg, 1deg);
+           z-index: 2;
+      }
+      .post:nth-child(4) {
+        display: none;
+      }
+      .post:nth-child(5) {
+        display: none;
+      }
+      #footer_links {
+        flex: 1;
+    }
+    #footer_links > a {
+        text-decoration: none;
+        color: rgb(155, 153, 153);
+        font-size: 12px;   
+    }
+
+    #container_5 > div:nth-child(2) > p {
+        font-size: 12px;
     }
 }
 
 @media (min-width: 1025px) {
      #logo {
-         height: 34px;
-         width: 150px;
+        padding-top: 30px;
+         height: 54px;
+         width: 250px;
      }
      
      #slogan {
-         font-size: 32px;
-         margin-top: 50px;
+         font-size: 54px;
+         margin-top: 0px;
+         margin-left: -80px;
      }
      
      #stylish {
@@ -538,6 +638,7 @@ body {
          background-image: linear-gradient(90deg, var(--orange), var(--salmon));
      }
      #hero2 {
+        margin-top: -40px;
         padding-left: 50px;
         display: grid;
         grid-template-columns: 2fr 1fr;  
@@ -563,9 +664,11 @@ body {
         
      }
      
-    
+    .download_now_btn {
+        height: 32px;
+    }
      #hero2_div1 {
-         width: 400px;
+         width: 80%;
          margin-top: 150px;
          margin-left: 100px;
      }
@@ -627,7 +730,24 @@ body {
             transform: rotateY(24deg) scale(1) skew(-2deg, 1deg) translateX(419px) translateY(-2px);
             z-index: 1;
        }
-       
+       #container_3 > #download_btn {
+        height: 36px;
+        width: 250px;
+        margin-bottom: 20px;
+       }
+       #download_btn > button {
+        font-size: 24px;
+        border: none;
+        background-color: transparent;
+        margin-right: 10px;
+       }
+       #download_btn > button:hover {
+        color: white;
+       }
+       #download_btn > img {
+        height: 24px;
+        width: 24px;
+       }
        
      #in_container_2 {
          display: flex;
@@ -647,7 +767,7 @@ body {
          width: 24px;
      }
      .in_container_level1 > h2 {
-         font-size: 16px;
+         font-size: 20px;
          margin-left: 10px;
      }
      #in_container_2 + div {
@@ -680,11 +800,7 @@ body {
          border-radius: 5px;
          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
          margin-bottom: 15px;
-     }
-     .cont_2_inner_container {
-        justify-content: space-around;
-        align-items: flex-start;
-        height: 350px;
+         height: 400px;
      }
      .cont_2_inner_container > img {
          height: 30px;
@@ -697,8 +813,8 @@ body {
      } 
      .cont_2_inner_container > p {
          /* min-height: 100px; */
-         font-size: 12px;
-         line-height: 12px;
+         font-size: 16px;
+         line-height: 22px;
      }
      .cont_2_in_level_1 > div > p:nth-child(1) {
         font-size: 16px;
@@ -755,11 +871,14 @@ body {
          padding: 30px 50px 20px;
      }
      #container_4 > div > img {
-         height: 30px;
-         width: 120px;
+         height: 40px;
+         width: 150px;
+         margin-bottom: 20px;
      }
-     #container_4 > div > p, #container_4 > div > address {
+     #container_4 > div > p {
          font-size: 16px;
+         margin: 0px;
+         padding: 5px;
      }
      #container_4 > div:nth-child(2) > p {
          font-weight: bold;
@@ -808,19 +927,19 @@ body {
          display: flex;
          justify-content: space-around;
          align-items: center;
-         width: 40%;
+         flex: 1;
      }
      #footer_links > a {
          text-decoration: none;
          color: rgb(155, 153, 153);
-         font-size: 16px;   
+         font-size: 12px;   
      }
      #footer_links > a:hover {
          cursor: pointer;
          color: #000000;
      }
      #container_5 > div:nth-child(2) > p {
-         font-size: 16px;
+         font-size: 12px;
          color: rgb(153, 153, 153);
      }
 }
