@@ -125,7 +125,7 @@ body {
     width: 100px;
     top: 0;
     border-radius: 10px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 15px rgba(200, 197, 197, 0.3);
   }
   .post:nth-child(1) {
     transform: rotateZ(-2deg) translateX(110px) translateY(0px);
@@ -377,7 +377,7 @@ body {
         height: 22px;
     }
     #girl {
-        height: 250px;
+        height: 335px;
         width: 220px;
         margin: auto;
     }
@@ -613,7 +613,7 @@ body {
         width: 220px;
         top: 0;
         border-radius: 10px;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 10px 15px rgba(200, 197, 197, 0.3);
       }
       .post:nth-child(1) {
            transform: rotateY(10deg) scale(0.7) translateX(-10px) translateY(-106px);
@@ -767,7 +767,7 @@ body {
          width: 220px;
          top: 0;
          border-radius: 10px;
-         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+         box-shadow: 0 10px 15px rgba(200, 197, 197, 0.8);
        }
        .post:nth-child(1) {
             transform: rotateY(20deg) scale(1.1);
@@ -783,10 +783,10 @@ body {
             z-index: 2;
        }
        .post:nth-child(4) {
-            transform: rotateY(24deg) skew(1deg, -2deg) scale(1) translateX(-419px) translateY(-2px);
+            transform: rotateY(24deg) skew(1deg, -2deg) scale(1) translateX(-419px) translateY(-12px);
        }
        .post:nth-child(5) {
-            transform: rotateY(24deg) scale(1) skew(-2deg, 1deg) translateX(419px) translateY(-2px);
+            transform: rotateY(24deg) scale(1) skew(-2deg, 1deg) translateX(400px) translateY(-12px);
             z-index: 1;
        }
        #container_3 > #download_btn {
